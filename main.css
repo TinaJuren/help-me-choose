@@ -44,5 +44,14 @@ button {
   border: 1px solid rgba(170, 185, 208, 0.3);
   border-radius: 5px;
   padding: 10px 32px;
+  margin-bottom: 40px;
   box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.result-section {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
 }
