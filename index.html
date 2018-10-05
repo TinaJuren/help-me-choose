@@ -32,13 +32,26 @@
   -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script>
-  $ (function() {
+  $(function() {
     $('.result-section').hide()
 
     var add_option = function() {
       $('.inputs').append('<input></input>')
     }
     $('.add-option').click(add_option)
+
+    var options = []
+    var submit = function() {
+      $('.input-section').hide()
+      $('.result-section').css('display', 'flex')
+      $('input').each(function() {
+        options.push($(this).val())
+      })
+      var winner = options[Math.floor(Math.random() * options.length)]
+      console.log(winner)
+      $('.result-section').text(winner)
+    }
+    $('.submit').click(submit)
   })
   </script>
   </body>
