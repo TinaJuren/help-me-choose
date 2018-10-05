@@ -17,6 +17,8 @@
         <button class="add-option">Add</button>
       </div>
     </div>
+    <div class="result-section">
+    </div>
     <button>Go!</button>
     <div>
     <h3>Satisfied with the word?</h3>
@@ -27,5 +29,15 @@
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+  $ (function() {
+    $('.result-section').hide()
+
+    var add_option = function() {
+      $('.inputs').append('<input></input>')
+    }
+    $('.add-option').click(add_option)
+  })
+  </script>
   </body>
 </html>
